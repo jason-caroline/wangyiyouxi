@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="jquery.js"></script>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			list-style:none;
+		}
+		.main{
+			width: 700px;
+			height: 310px;
+			margin: 0 auto;
+			background: url(https://qn.res.netease.com/pc/gw/20160803200535/img/spriter/style_z_c8c88dc.png);
+			border:1px solid red;
+			background-position: 0px -350px;
+			overflow: hidden;
+		}
+		.main> a{
+			display: block;
+			height: 50px;
+			width: 100px;
+			position: relative;
+			right: -590px;
+			line-height: 50px;
+			text-decoration: none;
+			text-align: center;
+			color: #686868;
+		}
+		.main >a> i{
+			font-size: 26px;
+		}
+		.main >ul{
+			width: 700px;
+			height: 310px;
+		}
+		.main >ul >li{
+			float: left;
+			cursor: pointer;
+			border-left: 0;
+			position: relative;
+			overflow: hidden;
+		}
+		.main >ul >li.active{
+			width:500px;
+			height: 260px;
+			/*border:1px solid red;*/
+		}
+		.main ul li .bg1{
+			 background-image: url(https://qn.res.netease.com/pc/gw/20160803200535/img/spriter/style_z_c8c88dc.png);
+			 background-position: -1260px -300px;
+			 background-repeat: no-repeat;
+			 width: 100px;
+		     height: 260px;
+		     text-indent: -999em;
+		     cursor: pointer;
+		     float: left;
+		     /*border:1px solid red;*/
+		}
+		.main ul li .bg1:hover{
+			background-position: -1160px -300px;
+		}
+		.main ul li .bg2{
+			background-image: url(https://qn.res.netease.com/pc/gw/20160803200535/img/spriter/style_z_c8c88dc.png);
+			background-position: -1060px -300px;
+			background-repeat: no-repeat;
+			width: 100px;
+		    height: 260px;
+		    text-indent: -999em;
+		    cursor: pointer;
+		    float: left;
+		}
+		.main ul li .bg2:hover{
+			background-position: -960px -300px;
+		}
+		
+		.main ul li .bg3{
+			background-image: url(https://qn.res.netease.com/pc/gw/20160803200535/img/spriter/style_z_c8c88dc.png);
+			background-position: -860px -300px;
+			width: 100px;
+		    height: 260px;
+		    text-indent: -999em;
+		    cursor: pointer;
+		    float: left;
+		    
+		}
+		.main >ul >li >div{
+			position: absolute;
+			left: 100px;
+			top: 0px;
+			background: #eee;
+			width: 400px;
+			height: 260px;
+		}
+		.sfq-1{
+			margin-left: 20px;
+			margin-top: 20px;
+			width:380px;
+			height: 100px;
+	
+		}
+
+		 .sfq-1 ul li{
+			width: 160px;
+			height: 90px;
+			float: left;
+			margin-right: 15px;
+			/*border:1px solid red;*/
+		}
+		.sfq-1-2{
+			width: 380px;
+			height: 115px;
+			margin-left: 20px;
+	
+		}
+		.sfq-1-2 li{
+			width: 380px;
+			height: 37px;
+			line-height: 37px;
+			text-align: left;
+			border-bottom:1px dotted green;
+		}
+		.sfq-1-2 li a{
+			text-decoration: none;
+			color: #686868;
+			font-size: 14px;
+
+		}
+		.sfq-1-2 li a:hover{
+			color: orange;
+		}
+
+		.sfq-2{
+			width: 380px;
+			height: 260px;
+			padding-left:20px;
+			padding-top: 20px;
+			background: #ddd;
+			
+		}
+		.sfq-2 li{
+			width: 330px;
+			height: 37px;
+			line-height: 37px;
+			padding-left: 10px;
+			border-bottom: 1px dotted blue;
+
+		}
+		.sfq-2 li a{
+			text-decoration: none;
+			color: #686868;
+			font-size: 14px;
+		}
+
+		.sfq-2 li a:hover{
+			color: orange;
+		}
+
+
+
+
+		.sfq-3{
+			width: 380px;
+			height: 260px;
+			padding-left:20px;
+			padding-top: 20px;
+			background: #ddd;
+			
+		}
+		.sfq-3 li{
+			width: 330px;
+			height: 37px;
+			line-height: 37px;
+			padding-left: 10px;
+			border-bottom: 1px dotted red;
+
+		}
+		.sfq-3 li a{
+			text-decoration: none;
+			color: #686868;
+			font-size: 14px;
+		}
+
+		.sfq-3 li a:hover{
+			color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<a href="">
+			<span>更多</span>
+			<i class="fa fa-plus-circle" aria-hidden="true"></i>
+		</a>
+
+		<ul>
+			<li class="active">
+				<h3 class="bg1"></h3>
+				<div>
+					<div class="sfq-1">
+						<ul>
+							<li><img src="img/16.jpg" alt=""></li>
+							<li><img src="img/17.jpg" alt=""></li>
+						</ul>
+					</div>
+					
+					<ul class="sfq-1-2">
+						<li><a href="#">[视频]狭路相逢,操作取胜!画魂你有freestyle吗[07/06]</a></li>
+						<li><a href="#">[任性]史上最花心的项链/人品守恒/我等着你 [07/06]</a></li>
+						<li><a href="#">[愉记]3级昆吾石爆得不讲道理 小媳妇爆 [07/06]</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li>
+				<h3  class="bg2"></h3>
+				<div class="sfq-2">
+						<ul>
+							<li><a href="#">团战可以输，魅者必须死(吗？)</a></li>
+							<li><a href="#">团战可以输，魅者必须死(吗？)</a></li>
+							<li><a href="#">团战可以输，魅者必须死(吗？)</a></li>
+							<li><a href="#">团战可以输，魅者必须死(吗？)</a></li>
+							<li><a href="#">团战可以输，魅者必须死(吗？)</a></li>
+							<li><a href="#">团战可以输，魅者必须死(吗？)</a></li>
+						</ul>
+				</div>
+			</li>
+
+			<li>
+				<h3 class="bg3"></h3>
+				<div class="sfq-3">
+					<ul>
+
+						<li><a href="#">紫金如梦之古琴：人成各，金菲昨，冰魂</a></li>
+						<li><a href="#">紫金如梦之古琴：人成各，金菲昨，冰魂</a></li>
+						<li><a href="#">紫金如梦之古琴：人成各，金菲昨，冰魂</a></li>
+						<li><a href="#">紫金如梦之古琴：人成各，金菲昨，冰魂</a></li>
+						<li><a href="#">紫金如梦之古琴：人成各，金菲昨，冰魂</a></li>
+						<li><a href="#">紫金如梦之古琴：人成各，金菲昨，冰魂</a></li>	
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<script>
+			$(".main>ul> li ").click(function(){
+				$(this).stop().animate({"width":"500px"},300).siblings().stop().animate({"width":"100px"},300);
+		
+			});
+	</script>
+</body>
+</html>
