@@ -387,7 +387,7 @@ $(function () {
 
     }else{
         $(".memberusername").html( sessionStorage.getItem("username5"));
-        //$(".loginReg").html("注销");
+        $(".loginReg").html("注销");
         //alert(4444);
 
     }
